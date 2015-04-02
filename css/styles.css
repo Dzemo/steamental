@@ -1,8 +1,42 @@
-/* Table des éléments */
-/* Css Général */
-/* Concerne le footer */
 /* Définition des couleurs flatuicolors.com */
 /* Définition des couleurs du jeu */
+.color-ressource {
+  color: #27ae60;
+}
+.color-technologie {
+  color: #2980b9;
+}
+.color-building {
+  color: #2c3e50;
+}
+.color-event {
+  color: #c0392b;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 avr. 2015, 23:11:56
+    Author     : Flavio DEROO
+*/
+.background_panel {
+  background-color: #3f2e2a;
+}
+.logo_panel {
+  background-color: #e1dcc9;
+}
+.ressources_panel {
+  background-color: #e1dcc9;
+}
+.dashboard_panel {
+  background-color: #e1dcc9;
+}
+.main_panel {
+  background-color: #e1dcc9;
+}
+/* Table des éléments */
 #liste_items {
   border-collapse: collapse;
   width: 75%;
@@ -43,9 +77,10 @@
 #liste_items .liste_items_td ul {
   list-style: none;
 }
+/* Css Général */
 html,
 body {
-  background-color: #bdc3c7;
+  background-color: #3f2e2a;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -61,6 +96,7 @@ body {
   height: 3em;
   clear: both;
 }
+/* Concerne le footer */
 #footer {
   text-align: center;
   position: relative;
@@ -73,15 +109,4 @@ body {
   vertical-align: middle;
   line-height: normal;
 }
-.color-ressource {
-  color: #27ae60;
-}
-.color-technologie {
-  color: #2980b9;
-}
-.color-building {
-  color: #2c3e50;
-}
-.color-event {
-  color: #c0392b;
-}
+/*# sourceMappingURL=styles.css.map */

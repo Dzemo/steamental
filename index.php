@@ -1,6 +1,3 @@
-<?php
-	require_once("lib/lessmake.php");
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 -->
@@ -13,16 +10,22 @@
 		<meta name="description" content="" />
 		<!-- JQUERY -->
 		<script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<!-- CSS GENERAL -->
+		<!-- CSS GENERAL + SKELETON -->
 		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+                <link href="css/normalize.css" rel="stylesheet" type="text/css" media="all" />
+                <link href="css/skeleton.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 	<body>
-	<div id="wrapper">
-		
-		<div id="push"></div>
-	</div>
-	<div id="footer">
-		<span>Flavio DEROO | Raphaël BIDEAU</span>
+	<div class="container">
+            <div class="row">
+                <div class="eight columns red_panel">
+                
+                </div> 
+                <div class="four columns">
+                
+                </div> 
+            </div>  
+	
 	</div>
 	</body>
 </html>

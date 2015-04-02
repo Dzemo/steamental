@@ -1,0 +1,42 @@
+/* Table des éléments */
+#liste_items {
+  border-collapse: collapse;
+  width: 75%;
+  margin: 5% 12.5%;
+  font-family: calibri;
+  font-size: 120%;
+}
+#liste_items .liste_items_th,
+#liste_items .liste_items_td {
+  padding: 5px;
+  border: 1px solid black;
+}
+#liste_items .liste_items_th {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+#liste_items .liste_items_td {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+#liste_items .liste_items_td div.name {
+  float: left;
+  margin: 0;
+  padding: 0 0 0 5px;
+  font-weight: bold;
+}
+#liste_items .liste_items_td div.tags {
+  float: right;
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+#liste_items .liste_items_td div.description {
+  clear: both;
+  margin: 0;
+  padding: 0 0 0 5px;
+  font-style: italic;
+}
+#liste_items .liste_items_td ul {
+  list-style: none;
+}
+/*# sourceMappingURL=modele.css.map */
