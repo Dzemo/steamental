@@ -22,7 +22,7 @@
                 
                 </div> 
                 <div class="four columns">
-                
+                Je suis passé par la
                 </div> 
             </div>  
 	
