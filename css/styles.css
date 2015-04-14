@@ -21,20 +21,59 @@ and open the template in the editor.
     Created on : 2 avr. 2015, 23:11:56
     Author     : Flavio DEROO
 */
-.background_panel {
-  background-color: #3f2e2a;
+.panel {
+  background-color: #ebe3c0;
+  opacity: 0.9;
 }
-.logo_panel {
-  background-color: #e1dcc9;
+.test_panel {
+  background-color: white;
+}
+.top-bar {
+  background-color: #ebe3c0;
+  width: 100%;
+  height: 10em;
+}
+.avatar_panel {
+  background-color: #ebe3c0;
+  padding: 2% 0%;
+  margin: 2% 0;
+  height: 10em;
 }
 .ressources_panel {
-  background-color: #e1dcc9;
+  background-color: #ebe3c0;
+  padding: 2% 0% 2% 4%;
+  margin: 2% 0%;
+  height: 10em;
 }
 .dashboard_panel {
-  background-color: #e1dcc9;
+  min-height: 30em;
+  opacity: 0.9;
 }
 .main_panel {
-  background-color: #e1dcc9;
+  background-color: #ebe3c0;
+  padding: 2% 4%;
+  margin: 2% 0;
+  min-height: 30em;
+  opacity: 0.9;
+}
+.production_panel {
+  background-color: #ebe3c0;
+  padding: 2% 4%;
+  margin: 2% 0;
+  min-height: 30em;
+  opacity: 0.9;
+}
+.hidden {
+  display: none;
+}
+.avatar {
+  margin-left: 40%;
+  width: 120px;
+  height: 120px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(../images/avatars/avatar.jpg) no-repeat;
 }
 /* Table des éléments */
 #liste_items {
@@ -80,9 +119,13 @@ and open the template in the editor.
 /* Css Général */
 html,
 body {
-  background-color: #3f2e2a;
   margin: 0;
   padding: 0;
+  background: url(../images/bg/2.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */
+  background-size: cover;
+  /* version standardisée */
   height: 100%;
 }
 #wrapper {
@@ -108,5 +151,49 @@ body {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
+}
+/* style du bloc ul */
+.menu-vertical {
+  width: 100%;
+  list-style: none;
+  /* supprime les puces de liste */
+  padding: 8% 4%;
+  /* on fait un peu de place autour des liens */
+  margin: 0;
+  /* on annule les marges */
+  text-align: center;
+}
+/* styles des liens et éléments de liste */
+.mv-item,
+.mv-item a {
+  /* les liens et item deviennent des blocs */
+  /* suffit théoriquement à virer les puces de liste */
+  display: block;
+}
+/* styles des liens */
+.mv-item a {
+  margin: 0 0;
+  /* espace les liens d'1 px */
+  padding: 8% 16%;
+  /* marges internes pour aérer */
+  color: #666;
+  background: #ebe3c0;
+  text-decoration: none;
+  /* on vire le soulignement */
+  /* on définit la transition pour les navigateurs */
+  -webkit-transition: all .3s;
+  /* Chrome/Safari */
+  -moz-transition: all .3s;
+  /* Firefox (plus trop nécessaire) */
+  transition: all .3s;
+  /* syntaxe officielle */
+}
+/* styles changeants au survol et focus */
+.mv-item a:hover,
+.mv-item a:focus {
+  background: #f6cf91;
+  color: #502e28;
+  padding-left: 30px;
+  /* décalage du contenu de 10px vers la droite (30-20 = 10) */
 }
 /*# sourceMappingURL=styles.css.map */

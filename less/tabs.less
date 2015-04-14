@@ -1,0 +1,39 @@
+/* style du bloc ul */
+.menu-vertical {
+  width: 100%;
+  list-style: none; /* supprime les puces de liste */
+  padding: 8% 4%; /* on fait un peu de place autour des liens */
+  margin: 0; /* on annule les marges */
+  text-align: center;
+}
+ 
+/* styles des liens et éléments de liste */
+.mv-item,
+.mv-item a {
+  /* les liens et item deviennent des blocs */
+  /* suffit théoriquement à virer les puces de liste */
+  display: block;
+}
+ 
+/* styles des liens */
+.mv-item a {
+  margin: 0 0; /* espace les liens d'1 px */
+  padding: 8% 16%; /* marges internes pour aérer */ 
+  color: #666;
+  background: @beige;
+  text-decoration: none; /* on vire le soulignement */
+  
+
+  /* on définit la transition pour les navigateurs */
+  -webkit-transition: all .3s; /* Chrome/Safari */
+  -moz-transition: all .3s; /* Firefox (plus trop nécessaire) */
+  transition: all .3s; /* syntaxe officielle */
+}
+ 
+/* styles changeants au survol et focus */
+.mv-item a:hover,
+.mv-item a:focus {
+  background: @gold;
+  color: @burnt;
+  padding-left: 30px; /* décalage du contenu de 10px vers la droite (30-20 = 10) */
+}
